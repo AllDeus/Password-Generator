@@ -1,0 +1,57 @@
+<html lang="en"><head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Password Generator</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<!---->
+	<body><div class="container">
+		<h2>Password Generator</h2>
+		<div class="result-container">
+			<span id="result"></span>
+			<button class="btn" id="clipboard">
+				<i class="far fa-clipboard"></i>
+			</button>
+		</div>
+		<!--Password Criteria-->
+		<div class="settings">
+			<div class="setting">
+				<label>Password length</label>
+				<input type="range" id="length" min="4" max="24" value="24" class="slider" oninput="this.nextElementSibling.value = this.value">
+				<output>24</output>
+			</div>
+			<div class="setting">
+				<label>Include uppercase letters</label> 
+				<input type="checkbox" id="uppercase" checked="">
+			</div>
+			<div class="setting">
+				<label>Include lowercase letters</label> 
+				<input type="checkbox" id="lowercase" checked="">
+			</div>
+			<div class="setting">
+				<label>Include numbers</label> 
+				<input type="checkbox" id="numbers" checked="">
+			</div>
+			<div class="setting">
+				<label>Include symbols</label> 
+				<input type="checkbox" id="symbols" checked="">
+			</div>
+		</div>
+		
+		<!--Password Generator button-->
+		<button class="btn btn-large" id="generate">
+			Generate password
+		</button>
+	</div>
+	<script src="script.js"></script>
+	
+	
+	
+	
+	
+	
+	</body>
+	</html>
